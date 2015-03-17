@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/aircontrol/AirControl.framework.git", :tag => s.version.to_s }
   s.source_files = 'AirControl/*.h'
   s.preserve_paths = 'AirControl/*.a'
-  s.library = 'nativeCSS'
+  s.library = 'AirControl'
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AirControl/AirControl"', 'OTHER_LDFLAGS' => '-lObjC' }
   s.frameworks = 'CoreText', 'QuartzCore', 'UIKit', 'CoreGraphics', 'CoreImage', 'Accelerate'
 
