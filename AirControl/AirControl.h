@@ -1,4 +1,4 @@
-/**
+/*
  Disclaimer: IMPORTANT:  This Make Apps Better software is supplied to you by Make Apps Better
  LTD. ("Make Apps Better") in consideration of your agreement to the following
  terms, and your use, installation, modification or redistribution of
@@ -37,20 +37,39 @@
  
  Copyright (C) 2013 Make Apps Better LTD. All Rights Reserved.
  
- **/
+ */
 
 #import <Foundation/Foundation.h>
 
+/**
+ Air-Control enables dynamic app editing with from http://air-control.com 
+ 
+ Air-Control also manages your style content, by downloading and caching remote assets such as images and fonts.
+ 
+ *Styling with Air-Control*
+ 
+ Our recommended setup is running Air-Control from your application delegate:
+ 
+ - (void)applicationDidBecomeActive:(UIApplication *)application{
+ 
+ [AirControl startWithAppId:@"YOUR APP ID"];
+ 
+ ( see startWithAppId: )
+ **/
 @interface AirControl : NSObject
 
-+(void) startWithAppId:(NSString*) appId;
-+(void) deleteCachedAssets;
-
-
-
-+(NSString*) appId;
-+(AirControl*) shared;
-+(NSString*) versionString;
+/**
+ Style application and download styling from http://air-control.com
+ @param appId air-control app id
+ */
++ (void) startWithAppId:(NSString*) appId;
+/**
+ Clears any cached assets stored by Air-Control.
+ */
++ (void) deleteCachedAssets;
++ (NSString*) appId;
++ (AirControl*) shared;
++ (NSString*) versionString;
 
 
 @end

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AirControl"
-  s.version      = "1-beta104"
+  s.version      = "1.0.5"
   s.summary      = "Make instant changes to your native apps from air-control.com"
   #s.description  = <<-DESC                 DESC
   s.homepage     = "http://air-control.com"
