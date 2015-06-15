@@ -70,6 +70,6 @@
 + (NSString*) appId;
 + (AirControl*) shared;
 + (NSString*) versionString;
-
++(void) setServerHost:(NSString*) serverHost;
 
 @end
